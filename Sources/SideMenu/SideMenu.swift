@@ -55,8 +55,8 @@ public struct SideMenu : View {
     @Environment (\.editMode) var editMode;
     
     @State private var sideMenuGestureMode: SideMenuGestureMode = SideMenuGestureMode.active;
-    @State private var sideMenuLeftPanel: Bool = false;
-    @State private var sideMenuRightPanel: Bool = false;
+    @State public var sideMenuLeftPanel: Bool = false;
+    @State public var sideMenuRightPanel: Bool = false;
     @State private var sideMenuCenterView: AnyView;
 
     private var menuAnimation: Animation {
